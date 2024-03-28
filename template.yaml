@@ -8,11 +8,11 @@ Metadata:
   AWS::ServerlessRepo::Application:
     Name: cloudwatch-alarm-to-discord
     Description: Send CloudWatch Alarms to Discord via an SNS topic.
-    Author: Jamie Wood
+    Author: Zero Based Ltd - Jamie Wood
     Labels: [ 'cloudwatch','discord','notification' ]
     HomePageUrl: https://github.com/woodjme/cloudwatch-alarm-to-discord
     ReadmeUrl: README.md
-    SemanticVersion: 0.0.1
+    SemanticVersion: 1.0.0
     SourceCodeUrl: https://github.com/woodjme/cloudwatch-alarm-to-discord
     SpdxLicenseId: MIT
     LicenseUrl: LICENSE
@@ -32,6 +32,7 @@ Resources:
   ForwardToDiscordFunction:
     Type: AWS::Serverless::Function
     Properties:
+      CodeUri: ./
       Description: Function for forwarding CloudWatch Alarms to Discord.
       Handler: dist/handlers/index.handler
       Runtime: nodejs20.x

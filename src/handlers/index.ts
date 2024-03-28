@@ -32,7 +32,7 @@ export const handler: SNSHandler = async (event) => {
     try {
       await hook.send(embed);
       console.log('Successfully sent webhook!');
-    } catch (e) {
+    } catch (e: any) {
       console.log(e.message);
     }
   }
