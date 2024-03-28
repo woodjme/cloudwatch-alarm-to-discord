@@ -1,0 +1,8 @@
+node_modules
+dist
+dev/
+.aws-sam
+samconfig.toml
+.cdk.staging
+cdk.out
+cdk.context.json

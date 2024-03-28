@@ -1,0 +1,27 @@
+{
+  "name": "cloudwatch-alarm-to-discord",
+  "version": "1.0.0",
+  "description": "Publish Cloudwatch Alarms to Discord",
+  "main": "index.js",
+  "exports": {
+    "import": "./src/index.mjs",
+    "require": "./src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "Jamie Wood <me@jamiewood.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "@aws-sdk/util-arn-parser": "^3.535.0",
+    "@tsconfig/node20": "20.1.2",
+    "@types/aws-lambda": "8.10.136",
+    "@types/lambda-log": "^3.0.3",
+    "lambda-log": "^3.1.0",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "discord-webhook-node": "^1.1.8"
+  }
+}
