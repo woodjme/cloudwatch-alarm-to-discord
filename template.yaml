@@ -12,7 +12,7 @@ Metadata:
     Labels: [ 'cloudwatch','discord','notification' ]
     HomePageUrl: https://github.com/woodjme/cloudwatch-alarm-to-discord
     ReadmeUrl: README.md
-    SemanticVersion: 1.0.0
+    SemanticVersion: 1.0.2
     SourceCodeUrl: https://github.com/woodjme/cloudwatch-alarm-to-discord
     SpdxLicenseId: MIT
     LicenseUrl: LICENSE
