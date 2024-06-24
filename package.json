@@ -1,6 +1,6 @@
 {
   "name": "cloudwatch-alarm-to-discord",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Publish Cloudwatch Alarms to Discord",
   "main": "index.js",
   "scripts": {
